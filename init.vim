@@ -38,5 +38,11 @@ runtime ./plug.vim
 
     
  colorscheme gruvbox-material
+" Goyo and Limelieht
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 
-
+" vim-jsx-pretty config
+let g:vim_jsx_pretty_colorful_config = 1 " default 0
+let g:vim_jsx_pretty_template_tags = ['html','jsx']
+let g:vim_jsx_pretty_highlight_close_tag = 1

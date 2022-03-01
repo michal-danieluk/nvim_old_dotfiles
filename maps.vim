@@ -28,3 +28,10 @@ nnoremap <silent> <leader>M :m $<CR>
 nnoremap <silent> <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>N :NvimTreeFindFile<CR>
+
+" Goyo mode 
+nnoremap <silent> <leader>G :Goyo<CR>
+
+" Move up
+nnoremap <silent> J <C-d>
+nnoremap <silent> U <C-u>

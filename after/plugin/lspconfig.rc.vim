@@ -100,7 +100,9 @@ nvim_lsp.tsserver.setup {
   capabilities = capabilities
 }
 
-
+nvim_lsp.tailwindcss.setup { 
+    cmd = {"~/bin/tailwindcss-language-server"}
+    }
 
 nvim_lsp.solargraph.setup {
   -- cmd = {"~/.local/share/nvim/lsp_servers/solargraph"},

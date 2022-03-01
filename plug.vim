@@ -5,7 +5,7 @@ call plug#begin()
 Plug 'sainnhe/gruvbox-material'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'cohama/lexima.vim'
-
+Plug 'maxmellon/vim-jsx-pretty'
 if has("nvim")
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'shaunsingh/nord.nvim'
@@ -21,6 +21,8 @@ if has("nvim")
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'hrsh7th/cmp-buffer'
   Plug 'hrsh7th/nvim-cmp'
+  " nvim v0.5.0
+  Plug 'kdheepak/lazygit.nvim'
 " nvim-tree with icons
 " requires
   Plug 'kyazdani42/nvim-web-devicons' " for file icons
@@ -33,6 +35,8 @@ if has("nvim")
 "    \ 'do': 'bash install.sh',
 "   \ }
   Plug 'mhinz/vim-startify' 
+  Plug 'junegunn/goyo.vim'
+  Plug 'junegunn/limelight.vim'
 endif
 " Plug 'nvim-lualine/lualine.nvim'
 " Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
