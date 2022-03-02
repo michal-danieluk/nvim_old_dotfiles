@@ -34,7 +34,9 @@ if has("nvim")
 "    \ 'branch': 'next',
 "    \ 'do': 'bash install.sh',
 "   \ }
-  Plug 'mhinz/vim-startify' 
+ " Plug 'mhinz/vim-startify' 
+  Plug 'glepnir/dashboard-nvim'
+  "Plug 'goolord/alpha-nvim'
   Plug 'junegunn/goyo.vim'
   Plug 'junegunn/limelight.vim'
 endif
