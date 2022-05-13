@@ -9,6 +9,8 @@ EOF
 lua << EOF
 local nvim_lsp = require('lspconfig')
 local protocol = require'vim.lsp.protocol'
+local util = require "lspconfig/util"
+
 
 -- Use an on_attach function to only map the following keys 
 -- after the language server attaches to the current buffer
@@ -93,6 +95,30 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(
 --  on_attach = on_attach,
 --  capabilities = capabilities
 --}
+
+nvim_lsp.gopls.setup {
+    cmd = {"gopls", "serve"},
+    filetypes = {"go", "gomod"},
+    root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+    settings = {
+      gopls = {
+        analyses = {
+          unusedparams = true,
+        },
+        staticcheck = true,
+      },
+    },
+  }
+-- neovim lsp config for go 
+--nvim_lsp.gopls.setup {
+--    cmd = { "~/go/bin/\./gopls" } ,
+--    -- filetype to attaches
+----    filetypes = { "go", "go.mod", "go.sum" },
+--  on_attach = on_attach,
+--  capabilities = capabilities
+--}
+
+
 
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,

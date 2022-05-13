@@ -30,7 +30,7 @@ nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>N :NvimTreeFindFile<CR>
 
 " Goyo mode 
-nnoremap <silent> <leader>G :Goyo<CR>
+nnoremap <silent> <leader>g :Goyo<CR>
 
 " Move up
 nnoremap <silent> J <C-d>

@@ -6,8 +6,8 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'cohama/lexima.vim'
 Plug 'maxmellon/vim-jsx-pretty'
-if has("nvim")
   Plug 'nvim-lualine/lualine.nvim'
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
   Plug 'shaunsingh/nord.nvim'
   Plug 'neovim/nvim-lspconfig'
   Plug 'tami5/lspsaga.nvim'
@@ -39,7 +39,7 @@ if has("nvim")
   "Plug 'goolord/alpha-nvim'
   Plug 'junegunn/goyo.vim'
   Plug 'junegunn/limelight.vim'
-endif
+  Plug 'github/copilot.vim'
 " Plug 'nvim-lualine/lualine.nvim'
 " Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plug 'nvim-lua/completion-nvim'

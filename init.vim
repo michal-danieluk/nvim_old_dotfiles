@@ -50,3 +50,14 @@ let g:vim_jsx_pretty_highlight_close_tag = 1
 " dashboard
 " Default value is clap
 let g:dashboard_default_executive ='telescope'
+
+
+" go filetypes
+" let g:go_filetypes = ['go']
+" Launch gopls when Go files are in use
+let g:LanguageClient_serverCommands = {
+       \ 'go': ['gopls']
+       \ }
+" Run gofmt on save
+autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
+autocmd FileType go setlocal omnifunc=v:lua.vim.lsp.omnifunc
